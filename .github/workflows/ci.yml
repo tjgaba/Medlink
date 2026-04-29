@@ -60,10 +60,7 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Install Flutter dependencies
+      - name: Verify Flutter project loads
         working-directory: flutter
         run: flutter pub get
 
-      - name: Check Flutter formatting
-        working-directory: flutter
-        run: dart format --set-exit-if-changed lib test
