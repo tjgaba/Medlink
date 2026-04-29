@@ -1,0 +1,44 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+*.pfx
+*.key
+
+# Prompt/reference material kept out of project commits
+System-prompt/
+
+# Logs and local run output
+*.log
+backend-run.out.log
+backend-run.err.log
+api-run.log
+api-run.err.log
+frontend-run.log
+frontend-run.err.log
+
+# .NET build output
+**/bin/
+**/obj/
+backend/build-check/
+backend/.verify-build/
+
+# Node/Vite output
+**/node_modules/
+frontend/dist/
+
+# Flutter/Dart output
+flutter/.dart_tool/
+flutter/build/
+flutter/.flutter-plugins
+flutter/.flutter-plugins-dependencies
+flutter/.packages
+
+# IDE and OS noise
+.idea/
+.vscode/
+*.suo
+*.user
+Thumbs.db
+desktop.ini
